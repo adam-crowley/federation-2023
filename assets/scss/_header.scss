@@ -1,0 +1,170 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: $margin--header--v $margin--widest--h;
+	@media (max-width: $bp--md) {
+		margin: $margin--header--v 0.75rem;
+	}
+	#logo-container {
+		position: relative;
+		z-index: 100;
+		img {
+			display: block;
+			width: 170px;
+		}
+	}
+	#nav__mobile-toggle {
+		height: 40px;
+		width: 40px;
+		padding: 5px;
+		cursor: pointer;
+		z-index: 100;
+		&.active {
+			.nav__mobile-toggle__bar:nth-child(1),
+			.nav__mobile-toggle__bar:nth-child(4) {
+				opacity: 0;
+			}
+			.nav__mobile-toggle__bar:nth-child(2){
+				transform: rotate(45deg);
+			}
+			.nav__mobile-toggle__bar:nth-child(3) {
+				transform: rotate(-45deg);
+			}
+		}
+		.nav__mobile-toggle__bar {
+			display: block;
+			height: 3px;
+			width: 100%;
+			margin: 6px 0;
+			background-color: black;
+			border-radius: 3px;
+			transition: $transition;
+		}
+		.nav__mobile-toggle__bar:nth-child(3) {
+			margin-top: -9px;
+		}
+		@media (min-width: $bp--md) {
+			display: none;
+			opacity: 0;
+		}
+	}
+	nav {
+		display: flex;
+		position: relative;
+		font-size: 0;
+		flex-direction: column;
+		transition: $transition;
+		.nav-item {
+			position: relative;
+			font-size: 12px;
+			text-transform: uppercase;
+			font-weight: 600;
+			a {
+				display: inline-block;
+				padding: 20px;
+				transition: $transition;
+				&.active, &:hover, &:active, &:focus  {
+					color: $red;
+					cursor: pointer;
+				}
+			}
+			.connect {
+				outline: 1px red solid;
+			}
+		}
+		@media (max-width: $bp--md) {
+			position: absolute;
+			top: 63px;
+			right: 10px;
+			width: 100%;
+			max-height: 0;
+			background-color: white;
+			overflow: hidden;
+			text-align: center;
+			z-index: 90;
+			&.active {
+				max-height: 100vh;
+				padding: 9vh 0;
+			}
+			.nav-item {
+				margin: 1vh 0;
+				font-family: "Fivo", sans-serif;
+				font-size: 30px;
+				font-weight: 900;
+			}
+		}
+		@media (min-width: $bp--md) {
+			justify-content: space-between;
+			flex-direction: row;
+			.nav-item {
+				margin: 0 5px;
+				&:last-child {
+					margin-right: 0;
+				}
+				// // Desktop Submenu styling
+				// &.has-child {
+				// 	> a {
+				// 		padding-right: 38px;
+				// 		&::after {
+				// 			content: url("../images/utility/chevron-right.svg");
+				// 			position: absolute;
+				// 			display: inline-block;
+				// 			width: 8px;
+				// 			height: 12px;
+				// 			transform: rotate(90deg);
+				// 			right: 12px;
+				// 		}
+				// 	}
+				// 	.has-child__click-out {
+				// 		position: fixed;
+				// 		left: 0;
+				// 		right: 0;
+				// 		top: 0;
+				// 		bottom: 0;
+				// 		opacity: 0;
+				// 		visibility: hidden;
+				// 		transition: $transition;
+				// 		background-color: white;
+				// 		z-index: 10;
+				// 	}
+				// 	&.active {
+				// 		.has-child__click-out {
+				// 			visibility: visible;
+				// 			opacity: 0.5;
+				// 		}
+				// 		.nav-sub-items {
+				// 			max-height: 200px; // Increase for 4+ submenu items
+				// 			transform: scaleY(1);
+				// 			z-index: 20;
+				// 		}
+				// 	}
+				// }
+				// .nav-sub-items {
+				// 	position: absolute;
+				// 	top: 54px;
+				// 	max-height: 0;
+				// 	overflow: hidden;
+				// 	transition: $transition;
+				// 	background-color: white;
+				// }
+			}
+		}
+	}
+	#nav__click-out {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		opacity: 0;
+		visibility: hidden;
+		transition: $transition;
+		background-color: white;
+		z-index: -1;
+		&.active {
+			visibility: visible;
+			opacity: 0.5;
+		}
+	}
+}

@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+/* Slider - Base styles */
+@import "../node_modules/slick-carousel/slick/slick.scss";
+@import 'variables.scss';
+
+$slick-font-family: "slick" !default;
+$slick-arrow-color: white !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
+$slick-dot-character: "\2022" !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+@function slick-image-url($url) {
+	@if function-exists(image-url) {
+		@return image-url($url);
+	}
+	@else {
+		// @return url($slick-loader-path + $url);
+	}
+}
+
+@function slick-font-url($url) {
+	@if function-exists(font-url) {
+		@return font-url($url);
+	}
+	@else {
+		// @return url($slick-font-path + $url);
+	}
+}
+
+.slick-slide {
+	height: auto;
+}
+
+/* Slider */
+
+.slick-list {
+	.slick-loading & {
+		// background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+	}
+}
+
+.slick--controls {
+	display: flex;
+	align-items: flex-start;
+}
+
+// Adjust this when changing number of slides
+.slick-list .slick-slide.card {
+	margin: 0 0.3%;
+}
+
+// Slick Work
+#slick__work .slick-track {
+	margin-left: -50%;
+	@media (min-width: $bp--md){
+		margin-left: -26%;
+	}
+	@media (min-width: $bp--lg){
+		margin-left: -31%;
+	}
+}
+#slick__work .slick-slide:last-child::after {
+	content: "";
+	width: 2px;
+}
+.finger.finger--slick-work {
+	@media (min-width: $bp--md) {
+		flex-direction: row;
+		.finger__text {
+			width: 40%;
+		}
+		.finger__image {
+			position: relative;
+			width: 60%;
+			margin-top: -40px;
+			margin-bottom: -60px;
+			.slick-slider::after {
+				content: "";
+				position: absolute;
+				top:0;
+				left:0;
+				width: 2.5%;
+				height: 100%;
+				background: linear-gradient(90deg, white 0%, transparent 100%);
+			}
+		}
+
+		// Adjust this when changing number of slides, nth-child number must be same as, or divisble by the number of slides
+		.card {
+			position: relative;
+			&:nth-child(9n + 1) { // second
+				margin-top: 60px;
+			}
+			&:nth-child(9n + 2) { // third
+				margin-top: 20px;
+			}
+			&:nth-child(9n + 3) { // fourth
+				margin-top: 40px;
+			}
+			&:nth-child(9n + 5) { // sixth
+				margin-top: 60px;
+			}
+			&:nth-child(9n + 6) { // seventh
+				margin-top: 20px;
+			}
+			&:nth-child(9n + 7) { // eighth
+				margin-top: 40px;
+			}
+			&:nth-child(9n + 8) { // ninth
+				margin-top: 60px;
+			}
+		}
+	}
+	@media (min-width: $bp--lg) {
+		.finger__text {
+			width: 33%;
+		}
+		.finger__image {
+			width: 67%;
+		}
+	}
+	.finger__image {
+		padding: 0;
+	}
+}
+
+// Slick Pill - Vertical
+#slick__pill_v {
+	&.slick-slider::after {
+		content: "";
+		position: absolute;
+		top:0;
+		left:0;
+		width: 2.5%;
+		height: 100%;
+		background: linear-gradient(90deg, white 0%, transparent 100%);
+	}
+}
+@media (max-width: $bp--md) {
+	.service-section--has-pill_v.service-section .service {
+		.service__image {
+			padding: 0 0 0 5%;
+		}
+		.service__text {
+			text-align: left;
+			.slick--controls {
+				justify-content: flex-start;
+			}
+		}
+	}
+}
+
+
+// Slick Pill - Horizontal
+#slick__pill_h {
+	.pill__image {
+		padding: $margin--card;
+	}
+	.pill__image  img {
+		width: 100%;
+		aspect-ratio: $aspect-ratio--pill--h--m;
+		border-radius: $border-radius--full;
+		object-fit: cover;
+	}
+	.pill__image.pill__image--squared-1 img {
+		border-radius: 0;
+	}
+	.pill__text {
+		margin-top: $gutter--xs;
+		margin-left: 20%;
+	}
+	@media (min-width: $bp--md) {
+		.pill__image img {
+			aspect-ratio: $aspect-ratio--finger--d;
+		}
+		&.slick-slider::after {
+			content: "";
+			position: absolute;
+			top:0;
+			left:0;
+			width: 1.5%;
+			height: 100%;
+			background: linear-gradient(90deg, white 0%, transparent 100%);
+		}
+	}
+}
+@media (max-width: $bp--md) {
+	.service-section--has-pill_h.service-section .service {
+		// .service__image {
+		// 	padding: 0 0 0 5%;
+		// }
+		.service__text {
+			text-align: left;
+			.slick--controls {
+				justify-content: flex-start;
+			}
+		}
+	}
+}
+
+// Slick Pill - Horizontal Wide
+#slick__pill_hw {
+	.pill__image img,
+	video {
+		width: 100%;
+		aspect-ratio: $aspect-ratio--pill--hw--m;
+		border-radius: $border-radius--full;
+		object-fit: cover;
+	}
+	video {
+		// width: 100%;
+		border-radius: $border-radius--full;
+		// object-fit: cover;
+		aspect-ratio: 1.78;
+		transition: $transition;
+	}
+	.pill__image.pill__image--squared-1 img {
+		border-radius: 0;
+	}
+	.pill__text {
+		margin-top: $gutter--xs;
+		margin-left: 20%;
+	}
+	@media (min-width: $bp--md) {
+		.pill__image img{
+			aspect-ratio: $aspect-ratio--pill--hw--d;
+		}
+	}
+}
+.pill__controls_hw {
+		margin-top: $gutter--xs;
+		margin-left: 20%;
+}

@@ -1,0 +1,156 @@
+.button {
+	display: inline-block;
+	margin-top: -3px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	border-radius: 35px;
+	border: 2px $red solid;
+	padding: 15px 30px;
+	background: $red;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	font-weight: 700;
+	color: white;
+	transition: $transition;
+	cursor: pointer;
+	&:last-child {
+		margin-right: 0;
+	}
+	&:hover, &:active, &:focus {
+		border-color: $red-dark;
+		background-color: $red-dark;
+		transform: scale($scale-up);
+		color: white;
+		&.prev {
+			transform: rotate(180deg) scale($scale-up);
+		}
+	}
+	svg {
+		height: 10px;
+	}
+	path {
+		fill: white;
+		transition: $transition;
+	}
+	&.next, &.prev {
+		svg {
+			position: relative;
+			left: 1px;
+		}
+	}
+	&.prev {
+		transform: rotate(180deg);
+	}
+	&.button--reverse {
+		border-color: white;
+		background-color: white;
+		color: $red;
+		path {
+			fill: $red;
+		}
+		&:hover, &:active, &:focus {
+			color: $red-dark;
+			path {
+				fill: $red-dark;
+			}
+		}
+	}
+	&.button--spot {
+		position: relative;
+		top: 3px;
+		margin-top: 0;
+		padding: 9px;
+		img.svg {
+			width: 13px;
+			height: 13px;
+		}
+		svg {
+			display: block;
+			height: 13px;
+			width: 13px;
+			path {
+				fill: white;
+			}
+		}
+		@media (min-width: $bp--md) {
+			padding: 12px;
+			img.svg {
+				width: 17px;
+				height: 17px;
+			}
+			svg {
+				height: 17px;
+				width: 17px;
+			}
+		}
+	}
+	&.button--exit {
+		transform: rotate(45deg);
+	}
+}
+
+.our-work-button-spacer {
+	display: inline-block;
+	width: 30px;
+}
+
+
+.label {
+	color: $red;
+	display: inline-block;
+	margin: 10px 10px 15px 10px;
+	border: 1px $red solid;
+	border-radius: $border-radius--full;
+	padding: 2px 8px;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.accordion {
+	.item {
+		border-radius: 32px;
+		margin: 8px 0;
+		padding: 8px 8px 8px 26px;
+		background-color: #ebebeb;
+		transition: $transition;
+		&.active {
+			background-color: $red;
+			h4, p {
+				color: white;
+			}
+			.button.button--spot {
+				transform: rotate(45deg);
+			}
+			.content {
+				overflow: show;
+				transition: max-height .3s cubic-bezier(1,0,1,0);
+				height: auto;
+				max-height: 9999px;
+
+				
+			}
+		}
+		.title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			cursor: pointer;
+			h4 {
+				margin: 7.5px 7.5px 7.5px 0;
+			}
+			.button.button--spot {
+				position: static;
+				margin: 0;
+			}
+		}
+		.content {
+			overflow: hidden;
+			max-height: 0;
+			transition: max-height .3s cubic-bezier(0,1,0,1);
+			p {
+				padding: 7.5px 18px 15.5px 0;
+			}
+		}
+	}
+}

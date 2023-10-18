@@ -1,0 +1,121 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+section {
+	margin: 50px 0;
+	@media (min-width: $bp--md) {
+		margin: $gutter--lg 0;
+	}
+}
+.gutter--lg {
+	padding-top: $gutter--lg;
+}
+.gutter {
+	padding-top: $gutter;
+}
+.gutter--sm {
+	padding-top: $gutter--sm;
+}
+.gutter--xs {
+	padding-top: $gutter--xs;
+}
+.finger {
+	width: 100%;
+	.finger__text {
+		padding: 5% 5% 0 5%;
+	}
+	.finger__image {
+		padding: 0 5% 0 0;
+		> img, > iframe {
+			object-fit: cover;
+			width: 100%;
+			aspect-ratio: $aspect-ratio--finger--m;
+		}
+		@media (max-width: $bp--md){
+			&.finger__image--contact {
+				padding: 0 5%;
+			}
+		}
+		
+	}
+	@media (min-width: $bp--md) {
+		display: flex!important;
+		flex-direction: row-reverse;
+		.finger__text {
+			width: 40%;
+			padding: 0 2.5% 0 5%;
+		}
+		.finger__image {
+			width: 60%;
+			padding: 0;
+			aspect-ratio: $aspect-ratio--finger--d;
+			> img, > iframe {
+				width: 100%;
+				border-radius: $border-radius--finger--right;
+			}
+		}
+	}
+}
+.modal-bio {
+  position: fixed;
+  left: 0;
+	top: 0;
+	width: 100%;
+	background-color: white;
+	visibility: hidden;
+	opacity: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	transition: $transition;
+  z-index: 20;
+	height: 100%;
+	min-height: 100vh;
+	z-index: 110;
+	&.active {
+		visibility: visible;
+		opacity: 1;
+	}
+	.modal-bio--text {
+		padding: $gutter;
+	}
+	
+	.modal-bio--image {
+		width: 100%;
+		max-height: 70vh;
+		aspect-ratio: 1/2;
+		object-fit: cover;
+	}
+	@media (min-width: $bp--lg) {
+		overflow: hidden;
+		.modal-bio--image {
+			max-height: 100vh;
+		}
+		.modal-bio--text {
+			display: flex;
+			align-items: center;
+			padding: 0 $gutter;
+		}
+	}
+	.button.button--exit {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+}
+@media (min-width: $bp--xxxl) {
+	.container-xxl {
+		min-width: 1600px;
+	}
+}
+
+.container.container--case-study-copy {
+	max-width: 1170px;
+}
+
+// About Hero show full image
+.page--about .hero {
+	height: auto;
+	.feature-img.d-md-none {
+		height: auto;
+	}
+}
