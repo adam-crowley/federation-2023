@@ -41,24 +41,26 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 	<?php 
 		// Print external scripts
-		if (isset($scripts)) {
-			foreach ($scripts as $script) {
-				if(str_contains($script, 'http')) {
-					echo '<script src="' . $script . '"></script>';
-				}
-			}
-		}
+		// if (isset($scripts)) {
+		// 	foreach ($scripts as $script) {
+		// 		if(str_contains($script, 'http')) {
+		// 			echo '<script src="' . $script . '"></script>';
+		// 		}
+		// 	}
+		// }
 	?>
+  <script src="<?=HTML_ROOT;?>/assets/js/slick.min.js"></script>
 	<script src="<?=HTML_ROOT;?>/assets/js/scripts.js"></script>
+  
 	<?php 
 		// Print internal scripts
-		if (isset($scripts)) {
-			foreach ($scripts as $script) {
-				if(! str_contains($script, 'http')) {
-					echo '<script src="' . HTML_ROOT . '/assets/js/' . $script . '"></script>';
-				}
-			}
-		}
+		// if (isset($scripts)) {
+		// 	foreach ($scripts as $script) {
+		// 		if(! str_contains($script, 'http')) {
+		// 			echo '<script src="' . HTML_ROOT . '/assets/js/' . $script . '"></script>';
+		// 		}
+		// 	}
+		// }
 	?>
 </body>
 </html>
