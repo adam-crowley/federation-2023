@@ -252,9 +252,12 @@
   object-fit: cover;
 }
 #slick__pill_hw video {
-  border-radius: 4000px;
-  aspect-ratio: 1.78;
   transition: all 0.3s ease;
+}
+@media (min-width: 768px) {
+  #slick__pill_hw video {
+    aspect-ratio: 2.5;
+  }
 }
 #slick__pill_hw .pill__image.pill__image--squared-1 img {
   border-radius: 0;
