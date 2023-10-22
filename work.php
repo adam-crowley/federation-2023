@@ -22,14 +22,15 @@
 			<div class="col col-12 col-md-8 col-lg-6">
 				<h1>Our Work</h1>
 				<p class="intro">Building brands, winning hearts, opening wallets. Here&nbsp;are&nbsp;some&nbsp;of our most talked-about and effective advertising campaigns.</p>
-				<!-- <div id="work-filters">
+				<div id="work-filters">
 					<h5 class="filter-by">Filter by service:</h5>
 					<a id="filter--brand" class="label">Brand</a>
 					<a id="filter--social" class="label">Social</a>
-					<a id="filter--creative" class="label">Creative</a>
+          <a id="filter--ooh" class="label">OOH</a>
+          <a id="filter--website" class="label">Digital</a>
+          <a id="filter--website" class="label">TVC</a>
 					<a id="filter--website" class="label">Website</a>
-					<a id="filter--strategy" class="label">Strategy</a>
-				</div> -->
+				</div>
 				<div class="gutter"></div>
 			</div>
 		</div>

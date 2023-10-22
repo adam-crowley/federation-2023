@@ -870,13 +870,17 @@ footer .linkedin.svg path {
   }
 }
 
+#work-filters {
+  margin-top: 40px;
+}
 #work-filters .filter-by {
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
   font-size: 15px;
+  margin-bottom: 20px;
 }
 #work-filters .label {
-  margin: 5px;
+  margin: 0 5px 10px 0;
 }
 
 #work-cards .cards.work-cards--primary {

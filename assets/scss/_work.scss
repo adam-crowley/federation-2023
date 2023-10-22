@@ -1,11 +1,13 @@
 #work-filters {
+  margin-top: 40px;
 	.filter-by {
-		display: inline-block;
+		display: block;
 		text-transform: uppercase;
 		font-size: 15px;		
+    margin-bottom: 20px;
 	}
 	.label {
-		margin: 5px;
+    margin: 0 5px 10px 0;
 	}
 }
 #work-cards {
