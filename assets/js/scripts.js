@@ -284,28 +284,27 @@ $(document).ready(function () {
   const currentUrl = window.location.pathname
   $('a[href~="' + currentUrl + '"]', 'header').addClass('active')
 
-  // Get all the filter labels
-  const filterLabels = document.querySelectorAll('#work-filters .label')
+  // Filter for work page
+  if ($('#work-filters').length) {
+    const filterLabels = document.querySelectorAll('#work-filters .label')
+    const workCards = document.querySelectorAll('.card')
 
-  // Get the work cards
-  const workCards = document.querySelectorAll('.card')
-
-  // Add a click event listener to each filter label
-  filterLabels.forEach((label) => {
-    label.addEventListener('click', (event) => {
-      event.preventDefault()
-      const filterText = label.textContent.toLowerCase()
-      workCards.forEach((card) => {
-        const labels = card.querySelectorAll('.label')
-        const cardMatchesFilter = Array.from(labels).some(
-          (label) => label.textContent.toLowerCase() === filterText
-        )
-        if (cardMatchesFilter) {
-          card.style.display = 'block'
-        } else {
-          card.style.display = 'none'
-        }
+    filterLabels.forEach((label) => {
+      label.addEventListener('click', (event) => {
+        event.preventDefault()
+        const filterText = label.textContent.toLowerCase()
+        workCards.forEach((card) => {
+          const labels = card.querySelectorAll('.label')
+          const cardMatchesFilter = Array.from(labels).some(
+            (label) => label.textContent.toLowerCase() === filterText
+          )
+          if (cardMatchesFilter) {
+            card.style.display = 'block'
+          } else {
+            card.style.display = 'none'
+          }
+        })
       })
     })
-  })
+  }
 })
