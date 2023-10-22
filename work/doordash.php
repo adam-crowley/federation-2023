@@ -136,7 +136,7 @@
 			"Billboard",
 			$img_path . "DoorDash-Billboard-mobile.webp",
 			$img_path . "DoorDash-Billboard.webp",
-			$img_path . "DoorDash-Billboard_XL.webp",
+			$img_path . "DoorDash-Billboard-XL.webp",
 		);
 		includeServiceSectionVideo(
 			"Social Videos",
