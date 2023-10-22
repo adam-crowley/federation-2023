@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 /* Slider - Base styles */
-@import "../node_modules/slick-carousel/slick/slick.scss";
-@import 'variables.scss';
+// @import "../node_modules/slick-carousel/slick/slick.scss";
+// @import 'variables.scss';
+@import 'slick-base.scss', 'variables.scss';
 
 $slick-font-family: "slick" !default;
 $slick-arrow-color: white !default;
