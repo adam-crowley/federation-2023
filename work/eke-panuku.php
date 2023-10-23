@@ -103,7 +103,7 @@
 			],
 			[
 				"title" => "Website",
-				"mobile" => $img_path . 'EkePanuku-website-mobile',
+				"mobile" => $img_path . 'EkePanuku-website-mobile.webp',
 				"desktop" => $img_path . 'Eke-Panuku-Webpage-XL.webp',
 				"mp4" => false,
 			],
