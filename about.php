@@ -58,7 +58,15 @@
 						includePeopleBio($item["slug"], $item["name"], $item["role"], $item["image_mobile"], $item["image_desktop"], $item["bio"]);
 					}
 				?>
+        <div id="people-btn" class="people-btn">
+          <div class="people-btn__container">
+            <div class="people-btn__gradient"></div>
+            <a id="people-btn__btn" class="button people-btn__btn">See more people +</a>
+          </div>
+        </div>
 			</div>
+      
+      
 		</div>
 	</section>
 	<section id="section--our-services ">

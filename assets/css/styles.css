@@ -498,6 +498,7 @@ a:hover, a:active, a:focus {
 }
 
 .cards {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -652,14 +653,20 @@ a:hover, a:active, a:focus {
   margin-top: 60px;
   row-gap: 60px;
 }
-#people-cards .card {
+#people-cards .card-container {
+  overflow: hidden;
   margin: 0 2.5%;
   width: calc(50% - 5%);
 }
 @media (min-width: 768px) {
-  #people-cards .card {
+  #people-cards .card-container {
     width: calc(25% - 5%);
   }
+}
+#people-cards .card {
+  width: 100%;
+  margin: 0;
+  max-width: none;
 }
 #people-cards .card:hover .text .button--spot svg path, #people-cards .card:active .text .button--spot svg path, #people-cards .card:focus .text .button--spot svg path {
   fill: white;
@@ -669,6 +676,38 @@ a:hover, a:active, a:focus {
 }
 #people-cards .card .text .button--spot svg path {
   fill: #e51d41;
+}
+
+.people-btn {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.people-btn__gradient {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.people-btn__container {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 167px;
+}
+
+.people-btn__btn.button {
+  position: absolute;
+  align-self: center;
+  margin: 0;
 }
 
 .button {
