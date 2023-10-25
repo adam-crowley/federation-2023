@@ -314,8 +314,6 @@ $(document).ready(function () {
   //See more work button for work page
   if ($('#work-cards').length) {
     $('#work-btn__btn').click(function () {
-      // Animate the secondary work cards down
-      console.log('lcick!')
       $('.work-cards--secondary-container').slideDown(400)
       setTimeout(function () {
         $('#work-btn__btn').hide()

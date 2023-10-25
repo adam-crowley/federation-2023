@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 }
 section {
+  overflow-x: clip;
 	margin: 50px 0;
 	@media (min-width: $bp--md) {
 		margin: $gutter--lg 0;
@@ -30,6 +31,7 @@ section {
 			object-fit: cover;
 			width: 100%;
 			aspect-ratio: $aspect-ratio--finger--m;
+      border-radius: 0 4000px 4000px 0;
 		}
 		@media (max-width: $bp--md){
 			&.finger__image--contact {

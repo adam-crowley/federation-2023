@@ -151,6 +151,7 @@ h4, h5, h6 {
 }
 
 section {
+  overflow-x: clip;
   margin: 50px 0;
 }
 @media (min-width: 768px) {
@@ -188,6 +189,7 @@ section {
   object-fit: cover;
   width: 100%;
   aspect-ratio: 1.4285714286;
+  border-radius: 0 4000px 4000px 0;
 }
 @media (max-width: 768px) {
   .finger .finger__image.finger__image--contact {
@@ -412,7 +414,7 @@ header #nav__click-out.active {
 
 body {
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 a {
