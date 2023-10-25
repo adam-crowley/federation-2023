@@ -291,6 +291,10 @@ $(document).ready(function () {
     filterLabels.forEach((label) => {
       label.addEventListener('click', (event) => {
         event.preventDefault()
+        filterLabels.forEach((label) => {
+          label.classList.remove('selected')
+        })
+        label.classList.add('selected')
         const filterText = label.textContent.toLowerCase()
         workCards.forEach((card) => {
           const labels = card.querySelectorAll('.label')

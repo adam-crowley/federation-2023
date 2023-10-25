@@ -924,6 +924,10 @@ footer .linkedin.svg path {
 #work-filters .label {
   margin: 0 5px 10px 0;
 }
+#work-filters .label:hover, #work-filters .label.selected {
+  color: #fff;
+  background-color: #e51d41;
+}
 
 #work-cards .work-btn {
   text-align: center;
