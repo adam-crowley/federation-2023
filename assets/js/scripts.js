@@ -288,7 +288,6 @@ $(document).ready(function () {
   if ($('#work-filters').length) {
     const filterLabels = document.querySelectorAll('#work-filters .label')
     const workCards = document.querySelectorAll('.card')
-
     filterLabels.forEach((label) => {
       label.addEventListener('click', (event) => {
         event.preventDefault()
@@ -308,14 +307,24 @@ $(document).ready(function () {
     })
   }
 
+  //See more work button for work page
+  if ($('#work-cards').length) {
+    $('#work-btn__btn').click(function () {
+      // Animate the secondary work cards down
+      console.log('lcick!')
+      $('.work-cards--secondary-container').slideDown(400)
+      setTimeout(function () {
+        $('#work-btn__btn').hide()
+      }, 400)
+    })
+  }
+
   //See more people button for about page
   if ($('#people-cards').length) {
     var itemsToShow = 8
     var itemsIncrement = 4
     var totalItems = $('#people-cards .card-container').length
-
     $('#people-cards .card-container:gt(' + (itemsToShow - 1) + ')').hide()
-
     $('#people-btn__btn').click(function () {
       var visibleItems = $('#people-cards .card-container:visible').length
       $(
@@ -323,7 +332,6 @@ $(document).ready(function () {
           (visibleItems + itemsIncrement) +
           '):hidden'
       ).slideDown(400)
-
       if (visibleItems + itemsIncrement >= totalItems) {
         setTimeout(function () {
           $('#people-btn').hide()

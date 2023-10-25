@@ -11,9 +11,15 @@
 	}
 }
 #work-cards {
+  .work-btn {
+    text-align: center;
+  }
 	.cards.work-cards--primary {
 		padding-bottom: $gutter;
 	}
+  .work-cards--secondary-container {
+    display: none;
+  }
 	.cards.work-cards--secondary {		
 		.card .text {
 			.card__header--sm {

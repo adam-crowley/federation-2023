@@ -44,16 +44,22 @@
 						includeWorkItem($item["slug"], $item["company"], $item["brief"], $item["thumb_primary_m"], $item["thumb"], $item["gradient"], $item["tags"]);
 					}
 			?>
+      
 		</div>
-		<div class="cards work-cards--secondary">
-			<!-- Secondary Work Cards -->
-			<?php
-				$secondary_work = array_slice($work, 9);
-				foreach ($secondary_work as $item) {
-						includeWorkItem($item["slug"], $item["company"], $item["brief"], $item["thumb"], $item["thumb"], $item["gradient"], $item["tags"]);
-					}
-			?>
-		</div>
+    <div class="work-cards--secondary-container">
+      <div class="cards work-cards--secondary">
+        <!-- Secondary Work Cards -->
+        <?php
+          $secondary_work = array_slice($work, 9);
+          foreach ($secondary_work as $item) {
+              includeWorkItem($item["slug"], $item["company"], $item["brief"], $item["thumb"], $item["thumb"], $item["gradient"], $item["tags"]);
+            }
+        ?>
+      </div>
+    </div>
+    <div class="work-btn">
+      <a id="work-btn__btn" class="button work-btn__btn">Load more work +</a>
+    </div>
 	</div>
 </section>
 

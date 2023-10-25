@@ -19,6 +19,8 @@
 }
 body {
   font-family: "Noto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, .h1, h2, h3, h4, h5, h6, p, ul, ol {
@@ -339,14 +341,15 @@ header nav {
 }
 header nav .nav-item {
   position: relative;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 600;
 }
 header nav .nav-item a {
+  font-family: "Fivo", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
   display: inline-block;
   padding: 20px;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 header nav .nav-item a.active, header nav .nav-item a:hover, header nav .nav-item a:active, header nav .nav-item a:focus {
   color: #e51d41;
@@ -711,6 +714,7 @@ a:hover, a:active, a:focus {
 }
 
 .button {
+  font-weight: 700;
   display: inline-block;
   margin-top: -3px;
   margin-right: 10px;
@@ -722,7 +726,6 @@ a:hover, a:active, a:focus {
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  font-weight: 700;
   color: white;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -815,7 +818,7 @@ a:hover, a:active, a:focus {
   border-radius: 4000px;
   padding: 2px 8px;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .accordion .item {
@@ -922,8 +925,14 @@ footer .linkedin.svg path {
   margin: 0 5px 10px 0;
 }
 
+#work-cards .work-btn {
+  text-align: center;
+}
 #work-cards .cards.work-cards--primary {
   padding-bottom: 60px;
+}
+#work-cards .work-cards--secondary-container {
+  display: none;
 }
 #work-cards .cards.work-cards--secondary .card .text .card__header--lg {
   margin-top: 0;
