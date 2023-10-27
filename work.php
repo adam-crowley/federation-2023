@@ -31,6 +31,15 @@
           <a id="filter--website" class="label">TVC</a>
 					<a id="filter--website" class="label">Website</a>
 				</div>
+        <div id="work-filters--mobile">
+          <label for="work-filters--mobile__select">Filter by service:</label>
+          <select id="work-filters--mobile__select">
+            <option value="all">All</option>
+            <option value="brand">Brand</option>
+            <option value="social">Social</option>
+            <option value="ooh">OOH</option>
+          </select>
+        </div>
 				<div class="gutter"></div>
 			</div>
 		</div>

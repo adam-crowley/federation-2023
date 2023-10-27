@@ -3,7 +3,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	margin: $margin--header--v $margin--widest--h;
-	@media (max-width: $bp--md) {
+	@media (max-width: 767px) {
 		margin: $margin--header--v 0.75rem;
 	}
 	#logo-container {
@@ -74,8 +74,14 @@ header {
 			.connect {
 				outline: 1px red solid;
 			}
+      .linkedin.svg {
+        width: 38px;
+      }
+      .linkedin.svg path {
+        fill: #000;
+      }
 		}
-		@media (max-width: $bp--md) {
+		@media (max-width: 767px) {
 			position: absolute;
 			top: 63px;
 			right: 10px;
@@ -86,19 +92,23 @@ header {
 			text-align: center;
 			z-index: 90;
 			&.active {
+        height: calc(100vh - 63px);
 				max-height: 100vh;
 				padding: 9vh 0;
 			}
-			.nav-item {
-				margin: 1vh 0;
+      .nav-item a {
 				font-family: "Fivo", sans-serif;
-				font-size: 30px;
+				font-size: 34px;
 				font-weight: 900;
+        padding: 24px;
 			}
 		}
 		@media (min-width: $bp--md) {
 			justify-content: space-between;
 			flex-direction: row;
+      .nav-item--linkedin {
+        display: none;
+      }
 			.nav-item {
 				margin: 0 5px;
 				&:last-child {

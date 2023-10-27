@@ -30,6 +30,7 @@
 	?>
 </head>
 <body>
+  <div class="page">
 	<header>
 		<div id="logo-container">
 			<a href="<?=HTML_ROOT;?>">
@@ -55,6 +56,9 @@
 				</div>
 			</div> -->
 			<div class="nav-item"><a href="<?=HTML_ROOT;?>/contact">Contact</a></div>
+      <div class="nav-item nav-item--linkedin">
+        <a target="_blank" href="https://nz.linkedin.com/company/federation."><img src="<?=HTML_ROOT;?>/assets/images/utility/linkedin.svg" class="svg linkedin" alt="LinkedIn" title="LinkedIn"></a>
+      </div>
 			<div id="nav__click-out"></div>
 		</nav>
 	</header>

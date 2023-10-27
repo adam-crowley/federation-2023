@@ -1,5 +1,9 @@
 #work-filters {
+  display: none;
   margin-top: 40px;
+  @media (min-width: $bp--md) {
+    display:block;
+  }
 	.filter-by {
 		display: block;
 		text-transform: uppercase;
@@ -13,6 +17,27 @@
       background-color: #e51d41;
     }
 	}
+  
+}
+#work-filters--mobile {
+  margin-top: 40px;
+  display: block;
+  @media (min-width: $bp--md) {
+    display:none;
+  }
+  label {
+    display: block;
+    font-family: "Fivo", sans-serif;
+    font-weight: 700;
+    line-height: 0.9;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  select {
+    width: 100%;
+    height: 40px;
+  }
 }
 #work-cards {
   .work-btn {

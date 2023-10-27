@@ -150,6 +150,20 @@ h4, h5, h6 {
   box-sizing: border-box;
 }
 
+body.mobile-nav-active {
+  overflow: hidden;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  body.mobile-nav-active {
+    padding-right: 0;
+  }
+}
+
+.page {
+  overflow: hidden;
+}
+
 section {
   overflow-x: clip;
   margin: 50px 0;
@@ -280,13 +294,24 @@ section {
   height: auto;
 }
 
+@media (max-width: 767px) {
+  .testimonial .finger__text {
+    padding: 10% 10% 0 10%;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial .quote {
+    font-size: 30px;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 20px 40px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header {
     margin: 20px 0.75rem;
   }
@@ -360,7 +385,13 @@ header nav .nav-item a.active, header nav .nav-item a:hover, header nav .nav-ite
 header nav .nav-item .connect {
   outline: 1px red solid;
 }
-@media (max-width: 768px) {
+header nav .nav-item .linkedin.svg {
+  width: 38px;
+}
+header nav .nav-item .linkedin.svg path {
+  fill: #000;
+}
+@media (max-width: 767px) {
   header nav {
     position: absolute;
     top: 63px;
@@ -373,20 +404,24 @@ header nav .nav-item .connect {
     z-index: 90;
   }
   header nav.active {
+    height: calc(100vh - 63px);
     max-height: 100vh;
     padding: 9vh 0;
   }
-  header nav .nav-item {
-    margin: 1vh 0;
+  header nav .nav-item a {
     font-family: "Fivo", sans-serif;
-    font-size: 30px;
+    font-size: 34px;
     font-weight: 900;
+    padding: 24px;
   }
 }
 @media (min-width: 768px) {
   header nav {
     justify-content: space-between;
     flex-direction: row;
+  }
+  header nav .nav-item--linkedin {
+    display: none;
   }
   header nav .nav-item {
     margin: 0 5px;
@@ -414,7 +449,6 @@ header #nav__click-out.active {
 
 body {
   margin: 0;
-  overflow-x: clip;
 }
 
 a {
@@ -537,6 +571,12 @@ a:hover, a:active, a:focus {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   aspect-ratio: 1;
+  margin: 0 15%;
+}
+@media (min-width: 768px) {
+  .cards .card.card--next {
+    margin: 0 2.5%;
+  }
 }
 .cards .card.card--next .card__img > img {
   object-position: top center;
@@ -646,11 +686,21 @@ a:hover, a:active, a:focus {
   }
 }
 .cards .section-next--next {
-  position: relative;
+  font-size: 36px;
+  position: absolute;
+  top: 0;
+  left: 5%;
   width: 0;
-  top: 6vw;
-  right: 5vw;
   z-index: 10;
+}
+@media (min-width: 768px) {
+  .cards .section-next--next {
+    font-size: 60px;
+    position: relative;
+    top: 6vw;
+    left: auto;
+    right: 5vw;
+  }
 }
 
 #people-cards {
@@ -915,7 +965,13 @@ footer .linkedin.svg path {
 }
 
 #work-filters {
+  display: none;
   margin-top: 40px;
+}
+@media (min-width: 768px) {
+  #work-filters {
+    display: block;
+  }
 }
 #work-filters .filter-by {
   display: block;
@@ -929,6 +985,29 @@ footer .linkedin.svg path {
 #work-filters .label:hover, #work-filters .label.selected {
   color: #fff;
   background-color: #e51d41;
+}
+
+#work-filters--mobile {
+  margin-top: 40px;
+  display: block;
+}
+@media (min-width: 768px) {
+  #work-filters--mobile {
+    display: none;
+  }
+}
+#work-filters--mobile label {
+  display: block;
+  font-family: "Fivo", sans-serif;
+  font-weight: 700;
+  line-height: 0.9;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+#work-filters--mobile select {
+  width: 100%;
+  height: 40px;
 }
 
 #work-cards .work-btn {

@@ -33,6 +33,10 @@
 			border-bottom-left-radius: 0;
 			border-bottom-right-radius: 0;
 			aspect-ratio: 1;
+      margin: 0 15%;
+      @media (min-width: $bp--md) {
+        margin: 0 2.5%;
+      }
 			.card__img > img {
 				object-position: top center;
 			}
@@ -149,11 +153,19 @@
 		}
 	}
 	.section-next--next {
-		position: relative;
+    font-size: 36px;
+		position: absolute;
+    top: 0;
+    left: 5%;
 		width: 0;
-    top: 6vw;
-    right: 5vw;
 		z-index: 10;
+    @media (min-width: $bp--md) {
+      font-size: 60px;
+      position: relative;
+      top: 6vw;
+      left: auto;
+      right: 5vw;
+    }
 	}
 }
 

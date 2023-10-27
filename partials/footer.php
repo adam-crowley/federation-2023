@@ -50,8 +50,7 @@
 		// }
 	?>
   <script src="<?=HTML_ROOT;?>/assets/js/slick.min.js"></script>
-	<script src="<?=HTML_ROOT;?>/assets/js/scripts.js"></script>
-  
+	<script src="<?=HTML_ROOT;?>/assets/js/scripts.js"></script> 
 	<?php 
 		// Print internal scripts
 		// if (isset($scripts)) {
@@ -62,5 +61,6 @@
 		// 	}
 		// }
 	?>
+  </div>
 </body>
 </html>

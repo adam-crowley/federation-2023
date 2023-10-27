@@ -13,16 +13,19 @@ $(document).ready(function () {
   // menu mobile toggle
   $('#nav__mobile-toggle').on('click', function () {
     if ($(this).hasClass('active')) {
+      $('body').removeClass('mobile-nav-active')
       $(this).removeClass('active')
       $('#nav__click-out').removeClass('active')
       $('nav').removeClass('active')
     } else {
+      $('body').addClass('mobile-nav-active')
       $(this).addClass('active')
       $('#nav__click-out').addClass('active')
       $('nav').addClass('active')
     }
   })
   $('#nav__click-out').on('click', function () {
+    $('body').removeClass('mobile-nav-active')
     $('#nav__mobile-toggle').removeClass('active')
     $('#nav__click-out').removeClass('active')
     $('nav').removeClass('active')
@@ -284,7 +287,7 @@ $(document).ready(function () {
   const currentUrl = window.location.pathname
   $('a[href~="' + currentUrl + '"]', 'header').addClass('active')
 
-  // Filter for work page
+  // Filter for work page -- Desktop
   if ($('#work-filters').length) {
     const filterLabels = document.querySelectorAll('#work-filters .label')
     const workCards = document.querySelectorAll('.card')
@@ -307,6 +310,29 @@ $(document).ready(function () {
             card.style.display = 'none'
           }
         })
+      })
+    })
+  }
+
+  // Filter for work page -- Mobile
+  if ($('#work-filters--mobile').length) {
+    const selectMenu = document.getElementById('work-filters--mobile__select')
+    const workCards = document.querySelectorAll('.card')
+    selectMenu.addEventListener('change', () => {
+      const selectedFilter = selectMenu.value
+      console.log('selectMenu.value: ', selectMenu.value)
+      workCards.forEach((card) => {
+        const labels = card.querySelectorAll('.label')
+        const cardMatchesFilter =
+          selectedFilter === 'all' ||
+          Array.from(labels).some(
+            (label) => label.textContent.toLowerCase() === selectedFilter
+          )
+        if (cardMatchesFilter) {
+          card.style.display = 'block'
+        } else {
+          card.style.display = 'none'
+        }
       })
     })
   }
