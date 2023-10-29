@@ -185,12 +185,18 @@ $(document).ready(function () {
       const playButton =
         modalVideoContainer.getElementsByClassName('button--play')[0]
       const exit = modalVideoContainer.getElementsByClassName('button--exit')[0]
+      const videoPosterUrl = video.getAttribute('poster')
+      const imageElement = $('<img class="modal-video-img">').attr(
+        'src',
+        videoPosterUrl
+      )
 
       function removeControls() {
         video.removeAttribute('controls')
       }
 
       $(playButton).on('click', function () {
+        imageElement.remove()
         // Scroll to top of video
         $([document.documentElement, document.body]).animate(
           {
@@ -225,7 +231,7 @@ $(document).ready(function () {
         playButton.classList.remove('hidden')
         video.classList.remove('playing')
         removeControls()
-        console.log('exit video')
+        $(video).before(imageElement)
       }
 
       // Close modal and pause video on exit button click
