@@ -190,6 +190,7 @@ $(document).ready(function () {
         'src',
         videoPosterUrl
       )
+      const serviceVideo = this.closest('.service')
 
       function removeControls() {
         video.removeAttribute('controls')
@@ -212,6 +213,7 @@ $(document).ready(function () {
           playButton.classList.add('hidden')
           video.classList.add('playing')
           modalVideoContainer.classList.add('active')
+          serviceVideo.classList.add('active')
         }
 
         video.onpause = function () {
@@ -225,6 +227,7 @@ $(document).ready(function () {
       })
 
       exitVideo = function () {
+        serviceVideo.classList.remove('active')
         modalVideoContainer.classList.remove('active')
         $(video)[0].load()
 

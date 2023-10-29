@@ -191,10 +191,10 @@
 }
 
 // Stack video/text when modal is active
-.service.align-items-center:has(.modal-video-container) {
+.service-section .service.align-items-center .modal-video-container {
 	transition: $transition;
 }
-.service.align-items-center:has(.modal-video-container.active) {
+.service-section .service.active {
 	flex-direction: column;
 	.service__image {
 		width: 100%;
