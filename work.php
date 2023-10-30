@@ -32,7 +32,7 @@
 					<a id="filter--website" class="label">Website</a>
 				</div>
         <div id="work-filters--mobile">
-          <label for="work-filters--mobile__select">Filter by service:</label>
+          <!-- <label for="work-filters--mobile__select">Filter by service:</label> -->
           <select id="work-filters--mobile__select">
             <option value="all">All</option>
             <option value="brand">Brand</option>
