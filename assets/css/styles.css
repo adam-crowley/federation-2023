@@ -498,6 +498,7 @@ a:hover, a:active, a:focus {
 }
 #hero--home video {
   height: 100%;
+  border-radius: inherit;
 }
 #hero--home.tall {
   height: 95vh;
@@ -525,6 +526,14 @@ a:hover, a:active, a:focus {
   top: 55%;
 }
 
+@media (min-width: 2080px) {
+  #hero--home .what#what1 {
+    left: calc((100vw - 2000px) / 2);
+  }
+  #hero--home .what#what2 {
+    right: calc((100vw - 2000px) / 2);
+  }
+}
 #h1--home {
   max-height: 0;
   opacity: 0;
