@@ -268,6 +268,7 @@ $(document).ready(function () {
       })
 
     $('.button.button--exit').on('click', function () {
+      console.log('click')
       document.body.style.position = 'initial'
 
       // Return to body scroll position

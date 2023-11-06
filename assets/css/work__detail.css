@@ -126,11 +126,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .modal-video-container.active {
   width: 100%;
   padding: 0;
   padding: 0 !important;
+  overflow: visible;
 }
 .modal-video-container.active .modal-video {
   border-radius: 0 !important;
@@ -140,8 +142,16 @@
   visibility: visible;
   opacity: 1;
 }
+.modal-video-container.modal-slick {
+  border-radius: 4000px;
+}
 .modal-video-container .modal-video-img {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
 }
 .modal-video-container .button--exit {
   position: absolute;
