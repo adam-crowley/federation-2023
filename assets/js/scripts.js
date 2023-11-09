@@ -318,6 +318,7 @@ $(document).ready(function () {
   if ($('#work-filters').length) {
     const filterLabels = document.querySelectorAll('#work-filters .label')
     const workCards = document.querySelectorAll('.card')
+    const clearFilters = document.getElementById('filter--clear')
     filterLabels.forEach((label) => {
       label.addEventListener('click', (event) => {
         event.preventDefault()
@@ -337,6 +338,15 @@ $(document).ready(function () {
             card.style.display = 'none'
           }
         })
+      })
+    })
+    clearFilters.addEventListener('click', (event) => {
+      event.preventDefault()
+      filterLabels.forEach((label) => {
+        label.classList.remove('selected')
+      })
+      workCards.forEach((card) => {
+        card.style.display = 'block'
       })
     })
   }
