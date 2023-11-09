@@ -244,19 +244,28 @@
     justify-content: flex-start;
   }
 }
+#slick__pill_hw .slick-list.active {
+  height: auto !important;
+}
 #slick__pill_hw .pill__image img,
 #slick__pill_hw video {
   width: 100%;
   aspect-ratio: 1.5;
-  border-radius: 4000px;
   object-fit: cover;
+  border-radius: 4000px;
 }
-#slick__pill_hw video {
-  transition: all 0.3s ease;
+#slick__pill_hw .pill__image img.playing,
+#slick__pill_hw video.playing {
+  aspect-ratio: 1.5;
+  width: 100% !important;
 }
 @media (min-width: 768px) {
   #slick__pill_hw video {
     aspect-ratio: 2.5;
+  }
+  #slick__pill_hw video.playing {
+    aspect-ratio: 2;
+    width: 100% !important;
   }
 }
 #slick__pill_hw .pill__image.pill__image--squared-1 img {

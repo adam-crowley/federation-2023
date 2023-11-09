@@ -164,11 +164,14 @@
   }
   .modal-video-img {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     width: 100%;
+    transition: all 0.3s ease;
+    aspect-ratio: 1.5;
+    object-fit: cover;
+    @media (min-width: $bp--md) {
+      aspect-ratio: 2.5;
+    }
+
   }
 	.button--exit {
 		position: absolute;
@@ -181,7 +184,7 @@
 	.button--play {
 		margin-bottom: 0;
 		svg {
-			margin-left: 7px;
+			margin-left: 10px;
 			transform: scale(1.7);
 		}
 	}
@@ -191,6 +194,8 @@
 		}
 	}
 	.button--play {
+    display: flex;
+    align-items: center;
 		position: absolute;
 		&.hidden {
 			visibility: hidden;

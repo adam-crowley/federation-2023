@@ -122,6 +122,7 @@ $(document).ready(function () {
 
   if ($('#slick__pill_hw').length) {
     $('#slick__pill_hw').slick({
+      draggable: false,
       infinite: true,
       slidesToShow: 1,
       speed: 300,
@@ -129,6 +130,14 @@ $(document).ready(function () {
       prevArrow: $('.slick-pill-hw-prev'),
       nextArrow: $('.slick-pill-hw-next'),
       adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            draggable: true,
+          },
+        },
+      ],
     })
   }
   if ($('#slick__pill_h').length) {
@@ -214,6 +223,11 @@ $(document).ready(function () {
           video.classList.add('playing')
           modalVideoContainer.classList.add('active')
           serviceVideo.classList.add('active')
+          if ($('.service-section .pill').length) {
+            slickList = $(modalVideoContainer)
+              .closest('.slick-list')
+              .addClass('active')
+          }
         }
 
         video.onpause = function () {
@@ -235,6 +249,9 @@ $(document).ready(function () {
         video.classList.remove('playing')
         removeControls()
         $(video).before(imageElement)
+        if ($('.service-section .pill').length) {
+          slickList.closest('.slick-list').removeClass('active')
+        }
       }
 
       // Close modal and pause video on exit button click
