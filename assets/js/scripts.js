@@ -377,21 +377,12 @@ $(document).ready(function () {
   //See more people button for about page
   if ($('#people-cards').length) {
     var itemsToShow = 8
-    var itemsIncrement = 4
-    var totalItems = $('#people-cards .card-container').length
     $('#people-cards .card-container:gt(' + (itemsToShow - 1) + ')').hide()
     $('#people-btn__btn').click(function () {
-      var visibleItems = $('#people-cards .card-container:visible').length
-      $(
-        '#people-cards .card-container:lt(' +
-          (visibleItems + itemsIncrement) +
-          '):hidden'
-      ).slideDown(400)
-      if (visibleItems + itemsIncrement >= totalItems) {
-        setTimeout(function () {
-          $('#people-btn').hide()
-        }, 400)
-      }
+      $('#people-cards .card-container:hidden').slideDown(400)
+      setTimeout(function () {
+        $('#people-btn').hide()
+      }, 400)
     })
   }
 })
