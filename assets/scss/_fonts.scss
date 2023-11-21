@@ -77,6 +77,11 @@ p, ul, ol {
   font-weight: 400;
   &.intro {
     font-size: 20px;
+    strong {
+      font-family: "Fivo";
+      font-weight: 700;
+      font-size: 24px;
+    }
   }
 }
 h4, h5, h6 {

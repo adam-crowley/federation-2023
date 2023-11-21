@@ -22,29 +22,36 @@
 ?>
 <div class="page--about">
 	<?php
-		includeHeroImage(
-			$img_path . 'Staff-hero_Mobile_v1.webp',
-			$img_path . 'Staff-hero_Desktop_v2.webp',
-			$img_path . 'Staff-hero_Desktop_XL_v2.webp',
-			$page_title,
-		);
+		// includeHeroImage(
+		// 	$img_path . 'Staff-hero_Mobile_v1.webp',
+		// 	$img_path . 'Staff-hero_Desktop_v2.webp',
+		// 	$img_path . 'Staff-hero_Desktop_XL_v2.webp',
+		// 	$page_title,
+		// );
 	?>
+  <div class="hero">
+    <video preload="auto" autoplay playsinline muted="muted" loop class="feature-img__bgvideo"><source src="<?=HTML_ROOT;?>/assets/videos/About-header_CL.mp4" type="video/mp4"></video>
+  </div>
 	<section>
 		<div class="container container-xxl">
 			<div class="row justify-content-center">
 				<div class="col col-12 col-md-8 col-lg-6">
-					<h1>About</h1>
-					<p class="intro">At Federation, we’re proudly independent and fiercely ambitious for our clients.</p>
-					<p class="intro">Your definition of success defines our mission. It also helps us assemble the right team - experts from a range of digital, creative and design disciplines.</p>
-					<p class="intro">Whether you’re a brand, a business or a community, you can trust us to hunt down your success.</p>
+					<h1>Who we are</h1>
+          <p class="intro"><strong>Driven by our clients’ success.</strong></p>
+					<p class="intro">From a market challenger start-up in 2008, Federation has become one of the leading independent agencies in New Zealand.</p>
+					<p class="intro">We work with leading multi-national brands in the NZ market, and entrepreneurial Kiwi brands ambitious for the world stage.</p>
+					<p class="intro">We also solve behaviour change challenges for our local and national government clients.</p>
+          <p class="intro">More than an advertising agency, we are innovators with a focus on your mission.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section>
 		<div class="container container-xxl">
-			<h3>People &amp; Culture</h3>
-			<p>We’re an eclectic group of like-minded people who enjoy making work that matters - to our clients and their customers.</p>
+			<h3>Meet our people</h3>
+			<p>We’re a team focused on building enduring success, both for our clients and Aotearoa New Zealand.</p>
+      <p>We’re a full-service team of multi-discipline experts. We build brands and change behaviour through exceptional strategy, creative, account service, digital and social.</p>
+      <p>Together, we create ideas that break new ground.</p>
 			<div id="people-cards" class="cards">
 				<!-- People Cards -->
 				<?php

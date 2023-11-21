@@ -35,9 +35,12 @@
 		<div class="row justify-content-center">
 			<div class="col col-12 col-md-8 col-lg-6">
 				<h1 id="h1--home">What does success look like to you?</h1>
-				<p>It’s a simple question, but it’s a powerful one. And it’s a question we ask every one of our clients. After all, if we don’t know where we’re heading, how can we hope to get you there?<br>
-				Welcome to Federation, an independent advertising agency in Aotearoa, New Zealand.</p>
-				<p>Let’s hunt down your success together.</p>
+				<p>It’s a simple question but it’s a powerful one.</p>
+				<p>And it’s a question we ask every one of our clients.</p>
+        <p>Is there an opportunity you want to unleash? Are there audience behaviours you want to change?</p>
+        <p>Your ‘success’ defines our mission. It also helps us assemble the right team – experts across a range of disciplines.</p>
+        <p>Welcome to Federation, leading independent New Zealand agency for ambitious clients.</p>
+        <p>Let us hunt down your success.</p>
 				<div class="gutter--xs"></div>
 				<a href="<?=HTML_ROOT;?>/about" class="button">About us</a>
 			</div>

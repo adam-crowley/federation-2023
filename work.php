@@ -21,14 +21,14 @@
 		<div class="row justify-content-center">
 			<div class="col col-12 col-md-8 col-lg-6">
 				<h1>Our Work</h1>
-				<p class="intro">Building brands, winning hearts, opening wallets. Here&nbsp;are&nbsp;some&nbsp;of our most talked-about and effective advertising campaigns.</p>
+				<p class="intro">Growing market share, creating behaviour change, winning hearts. Here are some of our most effective and talked about creative ideas.</p>
 				<div id="work-filters">
 					<h5 class="filter-by">Filter by service:</h5>
 					<a id="filter--brand" class="label">Brand</a>
 					<a id="filter--social" class="label">Social</a>
           <a id="filter--ooh" class="label">OOH</a>
-          <a id="filter--website" class="label">Digital</a>
-          <a id="filter--website" class="label">TVC</a>
+          <a id="filter--digital" class="label">Digital</a>
+          <a id="filter--tvc" class="label">TVC</a>
 					<a id="filter--website" class="label">Website</a>
           <a id="filter--clear" class="label--clear">Remove filter</a>
 				</div>
@@ -38,6 +38,9 @@
             <option value="brand">Brand</option>
             <option value="social">Social</option>
             <option value="ooh">OOH</option>
+            <option value="digital">Digital</option>
+            <option value="tvc">TVC</option>
+            <option value="website">Website</option>
           </select>
         </div>
 				<div class="gutter"></div>

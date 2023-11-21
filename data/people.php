@@ -11,16 +11,7 @@ $people = [
 		"bio" => "Sharon is our fearless agency leader. A strategic partner to Federation’s clients, Sharon is passionate about building the bond between a brand and its customers. She brings a world of experience to her role. Prior to starting Federation in 2008, Sharon was Managing Director of some of New Zealand’s largest advertising agencies. She’s also an active board member for Consumer New Zealand.
 		",
 	],
-	"elizabeth" => [
-		"slug" => "elizabeth",
-		"name" => "Elizabeth Beatty",
-		"role" => "Managing Partner",
-		"thumb" => "Elizabeth-thmb.webp",
-		"image_mobile" => "Elizabeth-mob.webp",
-		"image_desktop" => "Elizabeth-dsk.webp",
-		"bio" => "Having worked in the UK, Australia and NZ, Elizabeth brings a wealth of integrated experience and leadership qualities to Federation. Elizabeth is something of a chameleon – comfortable working in the brand space, applying her smarts to the Martech field or finding quality B2B solutions.",
-	],
-	"olly" => [
+  "olly" => [
 		"slug" => "olly",
 		"name" => "Olly Walker&#8209;Boden",
 		"role" => "Managing Partner",
@@ -28,6 +19,15 @@ $people = [
 		"image_mobile" => "Olly-mob.webp",
 		"image_desktop" => "Olly-dsk.webp",
 		"bio" => "Olly is a rare breed of account leader. He brings his digital, social and mobile expertise as well as blue chip brand experience to Federation. His ‘big picture’ perspective and endless good humour make him a great guy to have on the team.",
+	],
+	"dan" => [
+		"slug" => "dan",
+		"name" => "Dan Bye",
+		"role" => "Managing Partner",
+		"thumb" => "Dan_thumb.jpg",
+		"image_mobile" => "Dan_mobile.jpg",
+		"image_desktop" => "Dan_dsk.jpg",
+		"bio" => "",
 	],
 	"liz" => [
 		"slug" => "liz",
@@ -126,7 +126,7 @@ $people = [
 	],
 	"gal" => [
 		"slug" => "gal",
-		"name" => "Gal Schwager",
+		"name" => "Gal Stern",
 		"role" => "Senior Writer",
 		"thumb" => "Gal-thmb.webp",
 		"image_mobile" => "Gal-mob.webp",
@@ -177,9 +177,9 @@ $people = [
 		"slug" => "theo",
 		"name" => "Theo Press",
 		"role" => "Designer",
-		"thumb" => "Theo-thmb.webp",
-		"image_mobile" => "Theo-mob.webp",
-		"image_desktop" => "Theo-dsk.webp",
+		"thumb" => "Theo_thmb_NEW.jpg",
+		"image_mobile" => "Theo_mob_NEW.jpg",
+		"image_desktop" => "Theo_dsk.jpg",
 		"bio" => "Theo likes to flex his muscles – both his mental and his physical ones.</p>
 		<p>As a designer, he loves to tackle new challenges, pushing creative boundaries to create successful outcomes for clients.</p>
 		<p>As a human being, he enjoys pumping iron while listening to history podcasts</p>

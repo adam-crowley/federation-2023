@@ -20,7 +20,7 @@
 
 	<meta name="description" content="<?php echo !empty($page_description) ? $page_description : 'We’re Federation, an advertising agency creating provocative ideas that live within advertising, entertainment and technology.' ?>">
 	<link rel="stylesheet" href="<?=HTML_ROOT;?>/assets/css/bootstrap-grid.css">
-	<link rel="stylesheet" href="<?=HTML_ROOT;?>/assets/css/styles.css">
+	<link rel="stylesheet" href="<?=HTML_ROOT;?>/assets/css/styles.css?v=1">
 	<?php 
 		if (isset($styles)) {
 			foreach ($styles as $style) {
