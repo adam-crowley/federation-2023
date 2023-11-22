@@ -1,3 +1,40 @@
 .services {
+  background-color: #FFF6E3;
+  padding: 50px 0;
+  margin-bottom: 0;
+  @media (min-width: $bp--md) {
+    padding: 100px 0;
+  }
+}
+.services__service-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.services__service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: $red;
+  border: solid 1px $red;
+  border-radius: 4000px;
+  padding: 116px 20px;
+  margin: 0 2px 25px 2px;
+  width: 100%;
+  max-width: 288px;
+}
+.services__h2 {
+  font-family: "Fivo";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  @media (min-width: $bp--md) {
+    font-size: 18px;
+  }
+}
 
+.services__p {
+  font-size: 16px;
 }

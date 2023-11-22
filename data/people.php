@@ -23,11 +23,11 @@ $people = [
 	"dan" => [
 		"slug" => "dan",
 		"name" => "Dan Bye",
-		"role" => "Managing Partner",
+		"role" => "Chief Strategy Officer",
 		"thumb" => "Dan_thumb.jpg",
 		"image_mobile" => "Dan_mobile.jpg",
 		"image_desktop" => "Dan_dsk.jpg",
-		"bio" => "",
+		"bio" => "Dan Bye wears a whole lot of hats. Starting his career on the client side of the fence has given him an innate understanding of the challenges of the modern marketer. Subsequently, Dan moved into the agency world, where he fine tuned his strategic chops as well as managing a large number of humans. On top of all that, Dan has also turned a life long passion for cycling into a thriving small business. Walk a mile in your shoes? Yup, Dan’s done it all - with cleats on.",
 	],
 	"liz" => [
 		"slug" => "liz",

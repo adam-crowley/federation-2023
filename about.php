@@ -30,7 +30,7 @@
 		// );
 	?>
   <div class="hero">
-    <video preload="auto" autoplay playsinline muted="muted" loop class="feature-img__bgvideo"><source src="<?=HTML_ROOT;?>/assets/videos/About-header_CL.mp4" type="video/mp4"></video>
+    <video preload="auto" autoplay playsinline muted="muted" loop class="feature-img__bgvideo"><source src="<?=HTML_ROOT;?>/assets/videos/About-header_CL_v2.mp4" type="video/mp4"></video>
   </div>
 	<section>
 		<div class="container container-xxl">
