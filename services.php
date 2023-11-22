@@ -57,63 +57,63 @@
 	</div>
 </section> -->
 
-<section class="services">
+<section class="service-list">
 	<div class="container-lg">
 		<div class="row justify-content-center">
       <div class="col-12 col-sm-10 col-md-11 col-xl-10 col-xxl-8">
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-4 services__service-container">
-            <div class="services__service">
-              <h2 class="services__h2">Strategy</h2>
-              <p class="services__p">[copy to come]</p>
+          <div class="col-12 col-sm-6 col-md-4 service-list__service-container">
+            <div class="service-list__service">
+              <h2 class="service-list__h2">Strategy</h2>
+              <p class="service-list__p">[copy to come]</p>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 services__service-container">
-            <div class="services__service">
-                <h2 class="services__h2">Creative</h2>
-                <p class="services__p">From ideation to execution. Our teams create brand and retail platforms that are dynamic, strategic and culturally intelligent.</p>
+          <div class="col-12 col-sm-6 col-md-4 service-list__service-container">
+            <div class="service-list__service">
+                <h2 class="service-list__h2">Creative</h2>
+                <p class="service-list__p">From ideation to execution. Our teams create brand and retail platforms that are dynamic, strategic and culturally intelligent.</p>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 services__service-container">
-            <div class="services__service">
-              <h2 class="services__h2">Design and branding</h2>
-              <p class="services__p">Our branding professionals develop distinctive and meaningful brand platforms - from packaging to identity.</p>
+          <div class="col-12 col-sm-6 col-md-4 service-list__service-container">
+            <div class="service-list__service">
+              <h2 class="service-list__h2">Design and branding</h2>
+              <p class="service-list__p">Our branding professionals develop distinctive and meaningful brand platforms - from packaging to identity.</p>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 services__service-container">
-            <div class="services__service">
-              <h2 class="services__h2">Digital solutions</h2>
-              <p class="services__p">Our team of digital specialists develop strategies and solutions based on real world data and insights.</p>
+          <div class="col-12 col-sm-6 col-md-4 service-list__service-container">
+            <div class="service-list__service">
+              <h2 class="service-list__h2">Digital solutions</h2>
+              <p class="service-list__p">Our team of digital specialists develop strategies and solutions based on real world data and insights.</p>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 services__service-container">
-            <div class="services__service">
-                <h2 class="services__h2">From websites to e-commerce</h2>
-                <p class="services__p">We drive digital experiences and online store sales while supporting traditional bricks and mortar models.</p>
+          <div class="col-12 col-sm-6 col-md-4 service-list__service-container">
+            <div class="service-list__service">
+                <h2 class="service-list__h2">From websites to e-commerce</h2>
+                <p class="service-list__p">We drive digital experiences and online store sales while supporting traditional bricks and mortar models.</p>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 services__service-container">
-            <div class="services__service">
-              <h2 class="services__h2">Content</h2>
-              <p class="services__p">Our team develops video and editorial content for brands. We deliver quality work at the speed (and cost) of the Internet.</p>
+          <div class="col-12 col-sm-6 col-md-4 service-list__service-container">
+            <div class="service-list__service">
+              <h2 class="service-list__h2">Content</h2>
+              <p class="service-list__p">Our team develops video and editorial content for brands. We deliver quality work at the speed (and cost) of the Internet.</p>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 services__service-container">
-            <div class="services__service">
-              <h2 class="services__h2">PR, events and activations</h2>
-              <p class="services__p">In partnership with best-in-class activation producers, we deliver quality creative ideas and experiential platforms for our diverse client brands.</p>
+          <div class="col-12 col-sm-6 col-md-4 service-list__service-container">
+            <div class="service-list__service">
+              <h2 class="service-list__h2">PR, events and activations</h2>
+              <p class="service-list__p">In partnership with best-in-class activation producers, we deliver quality creative ideas and experiential platforms for our diverse client brands.</p>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 services__service-container">
-            <div class="services__service">
-                <h2 class="services__h2">Retail Spatial Design</h2>
-                <p class="services__p">We’ve created transformational spaces that weave technology and communication into the customer experience.</p>
+          <div class="col-12 col-sm-6 col-md-4 service-list__service-container">
+            <div class="service-list__service">
+                <h2 class="service-list__h2">Retail Spatial Design</h2>
+                <p class="service-list__p">We’ve created transformational spaces that weave technology and communication into the customer experience.</p>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 services__service-container">
-            <div class="services__service">
-              <h2 class="services__h2">Media planning</h2>
-              <p class="services__p">Our relationships allow us to offer expert media planning and buying power. We pride ourselves on performance measurement and seamless integration with the creative process.</p>
+          <div class="col-12 col-sm-6 col-md-4 service-list__service-container">
+            <div class="service-list__service">
+              <h2 class="service-list__h2">Media planning</h2>
+              <p class="service-list__p">Our relationships allow us to offer expert media planning and buying power. We pride ourselves on performance measurement and seamless integration with the creative process.</p>
             </div>
           </div>
         </div>

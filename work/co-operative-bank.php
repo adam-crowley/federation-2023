@@ -87,7 +87,6 @@
         <p>We set out to reposition The Cooperative Bank as a contemporary challenger with a brand strategy that encouraged New Zealanders to ‘Bank Better’. And we launched it with the simple observation that ‘Banking in New Zealand is a bit upside down.’</p>
         <h5>Success</h5>
         <p>The distinctive ‘upside down’ campaign has started a conversation with New Zealanders, prompting them to reassess how they bank, and who they bank with.</p> 
-
 			</div>
 		</div>
 	</div>
@@ -97,14 +96,24 @@
   <section class="service-section">
 		<div class="service align-items-center">
 			<div class="service__image">
-				<div class="text-graphic" style="background-color: #f5f1cc;">
-					<div class="stat-number" style="color:#2eb45d;">46%</div>
-					<div class="stat d-none d-md-block" style="color:#2eb45d;">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+
+        <?php /* Mobile only */ ?>
+				<div class="text-graphic d-md-none" style="background-color: #f5f1cc;">
+					<!-- <div class="stat-number" style="color: #f1eea7">#1</div> -->
+					<h4 class="d-md-none" style="color:#2eb45d;">“Federation is collaborative and ambitious on our behalf. Culturally, it’s a great fit.”<br>
+					<span style="font-weight: 700;">Catherine Bateman - The Co-operative Bank</span></h4>
+				</div>
+
+        <?php /* Desktop only */ ?>
+				<div class="text-graphic d-none d-md-flex" style="background-color: #f5f1cc;">
+					<!-- <div class="stat-number" style="color:#2eb45d;">46%</div> -->
+					<div class="stat" style="color:#2eb45d;">“Federation is collaborative and ambitious on our behalf. Culturally, it’s a great fit.”<br>
+          <span style="font-weight: 700;">Catherine Bateman - The Co-operative Bank</span></div>
 				</div>
 			</div>
-			<div class="service__text">
+			<!-- <div class="service__text">
 				<h4 class="d-md-none">Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
-			</div>
+			</div> -->
 		</div>
 	</section>
 

@@ -1,4 +1,4 @@
-.services {
+.service-list {
   background-color: #FFF6E3;
   padding: 50px 0;
   margin-bottom: 0;
@@ -6,12 +6,12 @@
     padding: 100px 0;
   }
 }
-.services__service-container {
+.service-list__service-container {
   display: flex;
   align-items: stretch;
   justify-content: center;
 }
-.services__service {
+.service-list__service {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +24,7 @@
   width: 100%;
   max-width: 288px;
 }
-.services__h2 {
+.service-list__h2 {
   font-family: "Fivo";
   font-weight: 700;
   font-size: 16px;
@@ -35,6 +35,6 @@
   }
 }
 
-.services__p {
+.service-list__p {
   font-size: 16px;
 }

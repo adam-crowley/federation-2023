@@ -100,14 +100,22 @@
 	<section class="service-section">
 		<div class="service align-items-center">
 			<div class="service__image">
-				<div class="text-graphic" style="background-image:url(<?=$img_path?>Macbeth-Call-out-mobile.webp); background-size: cover;">
-					<div class="stat-number">56%</div>
-					<div class="stat d-none d-md-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, mollitia.</div>
+
+        <?php /* Mobile only */ ?>
+				<div class="text-graphic d-md-none" style="background-image:url(<?=$img_path?>Macbeth-Call-out-mobile.webp); background-size: cover;">
+					<!-- <div class="stat-number" style="color: #f1eea7">#1</div> -->
+					<h4 class="d-md-none">Sold-out performances across the country.</h4>
+				</div>
+
+        <?php /* Desktop only */ ?>
+				<div class="text-graphic d-none d-md-flex" style="background-image:url(<?=$img_path?>Macbeth-Call-out-mobile.webp); background-size: cover;">
+					<!-- <div class="stat-number">56%</div> -->
+					<div class="stat d-none d-md-block">Sold-out performances across the country.</div>
 				</div>
 			</div>
-			<div class="service__text">
+			<!-- <div class="service__text">
 				<h4 class="d-md-none">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, mollitia.</h4>
-			</div>
+			</div> -->
 		</div>
 	</section>
 

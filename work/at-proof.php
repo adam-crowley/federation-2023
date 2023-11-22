@@ -83,8 +83,10 @@
 				</p>
 			</div>
 			<div class="col col-12 col-md-6">
-				<!-- <h5></h5> -->
-				<p>To launch AT’s new ‘Let’s go there’ platform, we created a fully integrated campaign (including a soundtrack composed of the sounds of the city itself). This allowed us to  showcase the freedoms a fully connected city now offers Aucklanders – from safe cycling, walking, buses, trains to ferries.</p>
+        <h5>Challenge</h5>
+				<p>As Auckland grows, Auckland Transport is focused on creating seamless journeys - a fully connected city. But when you can’t picture the finish line, the journey seems long and riddled with potholes. So, how could we stop the complaints and start the excitement?</p>
+        <h5>Solution</h5>
+        <p>To launch AT’s new ‘Let’s go there’ platform, we created a fully integrated campaign (including a soundtrack composed of the sounds of the city itself). This allowed us to  showcase the freedoms a fully connected city now offers Aucklanders – from safe cycling, walking, buses, trains to ferries.</p>
 			</div>
 		</div>
 	</div>
