@@ -43,12 +43,6 @@ section {
 			aspect-ratio: $aspect-ratio--finger--m;
       border-radius: 0 4000px 4000px 0;
 		}
-		@media (max-width: $bp--md){
-			&.finger__image--contact {
-				padding: 0 5%;
-			}
-		}
-		
 	}
 	@media (min-width: $bp--md) {
 		display: flex!important;

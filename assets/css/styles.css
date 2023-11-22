@@ -210,11 +210,6 @@ section {
   aspect-ratio: 1.4285714286;
   border-radius: 0 4000px 4000px 0;
 }
-@media (max-width: 768px) {
-  .finger .finger__image.finger__image--contact {
-    padding: 0 5%;
-  }
-}
 @media (min-width: 768px) {
   .finger {
     display: flex !important;
