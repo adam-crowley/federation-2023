@@ -86,7 +86,7 @@
 				<h5>Solution</h5>
 				<p>In the first phase of our behaviour change platform, we created an ownable piece of language that encouraged respect for the ocean and reflected our culture.<br>
 				Having created an emotional connection, we began to plant more specific advice.<br>
-				To launch Safer Boating Week, and to highlight the place where the known becomes the unknown, we created a spectacular ‘human life-line’ activation at a popular launch spot.<br>
+				To launch Safer Boating Week, and to highlight the place where the known becomes the unknown, we created a spectacular ‘human life-line’ activation at a popular boat launch spot.<br>
 				Salty Sid, hero of the high seas, became the face of the Boaties Safety line. <br>
 				His message? Cross this line without knowing the ways of the water, and your chances of returning home safe and sound are reduced.
 				</p>
@@ -101,8 +101,8 @@
 		<div class="service align-items-center">
 			<div class="service__image">
 				<div class="text-graphic text-graphic--row" style="background-color:#f28503;">
-					<div class="stat-number">39%</div>
-					<div class="stat d-none d-md-block">Reduction in deaths (Despite a rise in recreational craft&nbsp;use)</div>
+					<div class="stat-number" style="font-size: 15vw">39%</div>
+					<div class="stat d-none d-md-block">Reduction in deaths vs YOY rise in recreational craft use</div>
 				</div>
 			</div>
 			<div class="service__text">

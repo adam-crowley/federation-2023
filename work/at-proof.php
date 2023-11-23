@@ -97,12 +97,12 @@
 		<div class="service align-items-center">
 			<div class="service__image">
 				<div class="text-graphic text-graphic--row" style="background-color:#2d7caf;">
-					<div class="stat-number">2.4</div>
-					<div class="stat d-none d-md-block">million increase in Public Transport boardings (compared to 2020 target)</div>
+					<div class="stat-number">2.4M</div>
+					<div class="stat d-none d-md-block">increase in Public Transport boardings (compared to 2020 target)</div>
 				</div>
 			</div>
 			<div class="service__text">
-				<h4 class="d-md-none">million increase in Public Transport boardings (compared to 2020 target)</h4>
+				<h4 class="d-md-none">increase in Public Transport boardings (compared to 2020 target)</h4>
 			</div>
 		</div>
 	</section>

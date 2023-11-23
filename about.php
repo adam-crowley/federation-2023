@@ -38,9 +38,9 @@
 				<div class="col col-12 col-md-8 col-lg-6">
 					<h1>Who we are</h1>
           <p class="intro"><strong>Driven by our clients’ success.</strong></p>
-					<p class="intro">From a market challenger start-up in 2008, Federation has become one of the leading independent agencies in New Zealand.</p>
-					<p class="intro">We work with leading multi-national brands in the NZ market, and entrepreneurial Kiwi brands ambitious for the world stage.</p>
-					<p class="intro">We also solve behaviour change challenges for our local and national government clients.</p>
+					<p class="intro">From a market challenger start-up in 2008, Federation has become one of the leading independent agencies in New Zealand. We are hungry to do things differently and free to do the best work possible.</p>
+					<p class="intro">We work with leading New Zealand brands. NZX listed and private equity owned companies. Government and local government. Multi-national brand leaders. And entrepreneurial Kiwi brands ambitious for the world stage.</p>
+					<p class="intro">We create far-reaching, enduring solutions to your opportunities and challenges.</p>
           <p class="intro">More than an advertising agency, we are innovators with a focus on your mission.</p>
 				</div>
 			</div>
@@ -49,9 +49,9 @@
 	<section>
 		<div class="container container-xxl">
 			<h3>Meet our people</h3>
-			<p>We’re a team focused on building enduring success, both for our clients and Aotearoa New Zealand.</p>
-      <p>We’re a full-service team of multi-discipline experts. We build brands and change behaviour through exceptional strategy, creative, account service, digital and social.</p>
-      <p>Together, we create ideas that break new ground.</p>
+			<p>We are a team focused on building enduring success, both for our clients and for Aotearoa New Zealand.</p>
+      <p>We’re a full-service team of multi-discipline experts. We build brands and change behaviour through exceptional capability across strategy, creative, account service, digital and social.</p>
+      <p>Together, we create ideas that deliver maximum impact on the people you want to influence most.</p>
 			<div id="people-cards" class="cards">
 				<!-- People Cards -->
 				<?php

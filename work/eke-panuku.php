@@ -98,7 +98,7 @@
 			[
 				"title" => "Brand Guidelines",
 				"mobile" => $img_path . 'Eke-Panuku-Brand-guidelines-mobile.webp',
-				"desktop" => $img_path . 'Eke-Panuku-Brand-guidelines-xl.webp',
+				"desktop" => $img_path . 'Eke-Panuku-Brand-guidelines-XL.webp',
 				"mp4" => false,
 			],
 			[

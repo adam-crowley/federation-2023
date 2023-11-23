@@ -193,8 +193,8 @@ $people = [
 		"thumb" => "Sarah_thmb.png",
 		"image_mobile" => "Sarah_mob.png",
 		"image_desktop" => "Sarah_dsk.png",
-		"bio" => "(Work) Sarah is a commercially focused marketing strategist, with over 10 years’ experience both publisher and client-side. My background includes brand planning, marketing strategy, performance marketing, digital communications, advertising technology, analytics as well as client relationship management and business development. Most recently Sarah was the Marketing Lead for a land development consultancy and prior to that drove the digital brand strategy for BurgerFuel. </p>
-		<p>(Personal) Sarah enjoys spending time with her family, is a musician and has an interest in design, ceramics and getting into nature.
+		"bio" => "Sarah is a commercially focused marketing strategist, with over 10 years’ experience both publisher and client-side. My background includes brand planning, marketing strategy, performance marketing, digital communications, advertising technology, analytics as well as client relationship management and business development. Most recently Sarah was the Marketing Lead for a land development consultancy and prior to that drove the digital brand strategy for BurgerFuel. </p>
+		<p>Sarah enjoys spending time with her family, is a musician and has an interest in design, ceramics and getting into nature.
 		",
 	],
 	"ben" => [
@@ -204,9 +204,7 @@ $people = [
 		"thumb" => "Ben_thumb.png",
 		"image_mobile" => "Ben_mobile.png",
 		"image_desktop" => "Ben_desktop.png",
-		"bio" => "(Work) Sarah is a commercially focused marketing strategist, with over 10 years’ experience both publisher and client-side. My background includes brand planning, marketing strategy, performance marketing, digital communications, advertising technology, analytics as well as client relationship management and business development. Most recently Sarah was the Marketing Lead for a land development consultancy and prior to that drove the digital brand strategy for BurgerFuel. </p>
-		<p>(Personal) Sarah enjoys spending time with her family, is a musician and has an interest in design, ceramics and getting into nature.
-		",
+		"bio" => "Ben is a man with giant green thumbs. His love affair for garden design and landscaping enables him to create lush, tropical rain forests. His training in Creative Technologies allows him to nurture creative concepts and bring them to life. We’re chuffed to have him on the team - just don’t be surprised if you have to clear a path to the office with a machete next time you visit.",
 	],
 	// "tony" => [
 	// 	"slug" => "tony",

@@ -31,9 +31,9 @@
 		<div class="row justify-content-center">
 			<div class="col col-12 col-md-8 col-lg-6">
 				<h1>What we do</h1>
-				<p>We foster long term partnerships through performance, because enduring success doesn’t simply happen overnight.</p>
-        <p>We are the first agency to offer specialist climate change and net zero advisory for brands.</p>
-        <p>We bring a wealth of experience, and our senior talent will work beside you every day.</p>
+				<p>Federation has always been more than a name; it’s our purpose. Derived from the idea that a Federation brings different territories together, creating stability and common ground especially where cultural factors are at play. It’s this purpose that drives us, connecting our clients and their brands to genuine, enduring success.</p>
+        <p>We foster long term partnerships through performance, because enduring success doesn’t simply happen overnight.</p>
+        <p>We are senior talent working alongside you where it really matters.  Which is why we’re also the first agency to offer specialist sustainability advisory for brands.</p>
         <p>We are ambitious for you. And nothing less than step-change results will do.</p>
 			</div>
 		</div>
@@ -65,30 +65,30 @@
           <div class="col-12 col-sm-6 col-md-4 service-list__service-container">
             <div class="service-list__service">
               <h2 class="service-list__h2">Strategy</h2>
-              <p class="service-list__p">[copy to come]</p>
+              <p class="service-list__p">Strategy is where it all begins. Creating brand platform strategies and communications plans that lay the foundations for long-term business success.</p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 service-list__service-container">
             <div class="service-list__service">
                 <h2 class="service-list__h2">Creative</h2>
-                <p class="service-list__p">From ideation to execution. Our teams create brand and retail platforms that are dynamic, strategic and culturally intelligent.</p>
+                <p class="service-list__p">From ideation to execution. Our teams create ideas, platforms and campaigns that are dynamic, strategic and creatively intelligent.</p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 service-list__service-container">
             <div class="service-list__service">
               <h2 class="service-list__h2">Design and branding</h2>
-              <p class="service-list__p">Our branding professionals develop distinctive and meaningful brand platforms - from packaging to identity.</p>
+              <p class="service-list__p">Through branding strategy and design, we create brands with power. Transforming your brand DNA into instantly recognisable brand codes.</p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 service-list__service-container">
             <div class="service-list__service">
               <h2 class="service-list__h2">Digital solutions</h2>
-              <p class="service-list__p">Our team of digital specialists develop strategies and solutions based on real world data and insights.</p>
+              <p class="service-list__p">Our team of digital specialists are creative technologists, developing strategies and solutions based on real world data, insights and innovation.</p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-md-4 service-list__service-container">
             <div class="service-list__service">
-                <h2 class="service-list__h2">From websites to e-commerce</h2>
+                <h2 class="service-list__h2">From websites to <span style="white-space: nowrap">e-commerce</span></h2>
                 <p class="service-list__p">We drive digital experiences and online store sales while supporting traditional bricks and mortar models.</p>
             </div>
           </div>
