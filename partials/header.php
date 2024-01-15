@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GBT0WTLEM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8GBT0WTLEM');
+  </script>
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +19,8 @@
 	</title>
 
 	<!-- No caching during development -->
-	<meta http-equiv="Expires" content="Tue, 01 Jan 1995 12:12:12 GMT">
-	<meta http-equiv="Pragma" content="no-cache">
+	<!-- <meta http-equiv="Expires" content="Tue, 01 Jan 1995 12:12:12 GMT">
+	<meta http-equiv="Pragma" content="no-cache"> -->
 
 	<!-- Favicons -->
 	<link rel="icon" href="<?=HTML_ROOT;?>/favicon.ico" sizes="any">
