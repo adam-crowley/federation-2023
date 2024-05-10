@@ -173,7 +173,6 @@ body::before {
 }
 
 .page {
-  position: relative;
   overflow: hidden;
 }
 
