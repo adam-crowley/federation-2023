@@ -43,8 +43,8 @@
 		transform: rotate(180deg);
 	}
 	&.button--reverse {
-		border-color: white;
-		background-color: white;
+		border-color: transparent;
+		background-color: transparent;
 		color: $red;
 		path {
 			fill: $red;

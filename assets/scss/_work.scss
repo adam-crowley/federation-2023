@@ -1,6 +1,29 @@
+.work__intro {
+  margin-bottom: 60px;
+  @media (min-width: $bp--md) {
+    margin-bottom: 120px;
+  }
+}
+.work__h1 {
+  margin-bottom: 30px;
+  @media (min-width: $bp--md) {
+    font-size: 84px;
+    margin-bottom: 0;
+  }
+  @media (min-width: $bp--lg) {
+    font-size: 120px;
+    margin-bottom: 0;
+  }
+}
+.work__filter-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 12px;
+}
 #work-filters {
   display: none;
-  margin-top: 40px;
+  margin-top: 10px;
   @media (min-width: $bp--md) {
     display:block;
   }

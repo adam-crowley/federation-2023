@@ -71,7 +71,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col col-12 col-md-6">
-				<h2><?=$page_data['brief']?></h2>
+				<h2 style="word-break: break-all;"><?=$page_data['brief']?></h2>
 				<p class="maintain-margin"><strong>Services:</strong>
 					<?php
 						foreach($page_data['tags'] as $tag) {

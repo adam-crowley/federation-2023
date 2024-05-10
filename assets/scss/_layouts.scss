@@ -8,7 +8,19 @@ body.mobile-nav-active {
 		padding-right: 0;
 	}
 }
+body {
+  background-color: #FFF7E4;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  }
+}
 .page {
+  position: relative;
   overflow: hidden;
 }
 section {
@@ -81,6 +93,9 @@ section {
 		visibility: visible;
 		opacity: 1;
 	}
+  h2 {
+    text-transform: initial;
+  }
 	.modal-bio--text {
 		padding: $gutter;
 	}

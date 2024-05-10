@@ -18,10 +18,12 @@
 </div>
 <section>
 	<div class="container container-xxl">
-		<div class="row justify-content-center">
-			<div class="col col-12 col-md-8 col-lg-6">
-				<h1>Our Work</h1>
-				<p class="intro">Growing market share, creating behaviour change, winning hearts. Here are some of our most effective and talked about creative ideas.</p>
+		<div class="work__intro row justify-content-center">
+			<div class="col col-12 col-md-6 col-xl-5">
+				<h1 class="work__h1 maintain-margin">Our<br class="d-none d-md-block"> Work</h1>
+      </div>
+      <div class="col col-12 col-md-6 col-xl-5 work__filter-col">
+        <p class="intro">Growing market share, creating behaviour change, winning hearts. Here are some of our most effective and talked about creative ideas.</p>
 				<div id="work-filters">
 					<h5 class="filter-by">Filter by service:</h5>
 					<a id="filter--brand" class="label">Brand</a>
@@ -43,7 +45,6 @@
             <option value="website">Website</option>
           </select>
         </div>
-				<div class="gutter"></div>
 			</div>
 		</div>
 	</div>

@@ -145,7 +145,7 @@
     left: 0;
     width: 2.5%;
     height: 100%;
-    background: linear-gradient(90deg, white 0%, transparent 100%);
+    background: linear-gradient(90deg, #FFF7E4 0%, transparent 100%);
   }
   .finger.finger--slick-work .card {
     position: relative;
@@ -191,7 +191,7 @@
   left: 0;
   width: 2.5%;
   height: 100%;
-  background: linear-gradient(90deg, white 0%, transparent 100%);
+  background: linear-gradient(90deg, #FFF7E4 0%, transparent 100%);
 }
 
 @media (max-width: 768px) {
@@ -232,7 +232,7 @@
     left: 0;
     width: 1.5%;
     height: 100%;
-    background: linear-gradient(90deg, white 0%, transparent 100%);
+    background: linear-gradient(90deg, #FFF7E4 0%, transparent 100%);
   }
 }
 
