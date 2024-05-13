@@ -164,6 +164,7 @@ body {
   background-color: #FFF7E4;
 }
 body::before {
+  z-index: -1;
   content: "";
   position: absolute;
   top: 0;

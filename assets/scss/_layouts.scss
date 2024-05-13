@@ -11,6 +11,7 @@ body.mobile-nav-active {
 body {
   background-color: #FFF7E4;
   &::before {
+    z-index: -1;
     content: "";
     position: absolute;
     top: 0;
