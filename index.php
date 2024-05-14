@@ -22,6 +22,12 @@
 	include ABSPATH . '/data/testimonials.php';
 
 	include ABSPATH . '/partials/header.php';
+
+  // Send headers to prevent caching of testimonial order
+  header("Cache-Control: no-cache, must-revalidate"); // HTTP 1.1
+  header("Pragma: no-cache"); // HTTP 1.0
+  header("Expires: Sat, 1 Jan 2000 00:00:00 GMT"); // Date in the past
+
 ?>
 <div id="hero--home" class="hero hero--home">
 		<video preload="auto" autoplay playsinline muted="muted" loop class="feature-img__bgvideo"><source src="<?=HTML_ROOT;?>/assets/videos/920x518_2023_Homepage_v4.mp4" type="video/mp4"></video>
@@ -77,6 +83,7 @@
 	<div id="slick__testimonials" class="">
 		<!-- Testimonials -->
 		<?php
+      shuffle($testimonials);
 			foreach ($testimonials as $item) {
 				includeTestimonial($item["quote"], $item["name"], $item["role"], $item["company"], $item["image_mobile"], $item["image_desktop"]);
 			}
