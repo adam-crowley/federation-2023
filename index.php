@@ -10,7 +10,7 @@
 	}
 
 	// Data
-	$page_title = "Provocative advertising";
+	$page_title = "Leading New Zealand advertising agency for ambitious clients";
 	$page_description = "We’re Federation, an advertising agency creating provocative ideas that live within advertising, entertainment and technology.";
 	$styles = [
 		'slick.css',
@@ -20,13 +20,12 @@
 	];
 	include ABSPATH . '/data/work.php';
 	include ABSPATH . '/data/testimonials.php';
-
 	include ABSPATH . '/partials/header.php';
 
-  // Send headers to prevent caching of testimonial order
-  header("Cache-Control: no-cache, must-revalidate"); // HTTP 1.1
-  header("Pragma: no-cache"); // HTTP 1.0
-  header("Expires: Sat, 1 Jan 2000 00:00:00 GMT"); // Date in the past
+  // Send headers to prevent caching of testimonial order on homepage
+  header("Cache-Control: no-cache, must-revalidate");
+  header("Pragma: no-cache");
+  header("Expires: Sat, 1 Jan 2000 00:00:00 GMT");
 
 ?>
 <div id="hero--home" class="hero hero--home">

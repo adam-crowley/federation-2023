@@ -15,12 +15,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>
-		<?php echo !empty($page_title) ? $page_title . " | Federation" : 'Federation' ?>
+		<?php echo !empty($page_title) ? "Federation – " . $page_title : 'Federation' ?>
 	</title>
 
-	<!-- No caching during development -->
-	<!-- <meta http-equiv="Expires" content="Tue, 01 Jan 1995 12:12:12 GMT">
-	<meta http-equiv="Pragma" content="no-cache"> -->
+  <?php
+	 // Turn off caching during development 
+	  // echo <meta http-equiv="Expires" content="Tue, 01 Jan 1995 12:12:12 GMT">
+	  // echo <meta http-equiv="Pragma" content="no-cache">
+  ?>
 
 	<!-- Favicons -->
 	<link rel="icon" href="<?=HTML_ROOT;?>/favicon.ico" sizes="any">
