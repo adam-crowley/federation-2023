@@ -7,13 +7,113 @@ header {
 		margin: $margin--header--v 0.75rem;
 	}
 	#logo-container {
+    display: flex;
 		position: relative;
 		z-index: 100;
 		img {
 			display: block;
 			width: 170px;
 		}
+    .city-container {
+      position: relative;
+      padding-left: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+    .city {
+      position: absolute;
+      display: inline-block;
+      font-size: 20px;
+      opacity: 0;
+      transform: rotateX(90deg); /* Start with flipped state */
+      transform-origin: center;
+      &:first-child {
+        opacity: 1; /* Visible at the start */
+        transform: rotateX(0deg); /* No flip, already in place */
+        animation: flip-animation-1 7s infinite;
+      }
+      &:nth-child(2) {
+        animation: flip-animation-2 7s infinite;
+      }
+      &:nth-child(3) {
+        animation: flip-animation-3 7s infinite;
+      }
+    }
 	}
+  @keyframes flip-animation-1 {
+    0% {
+        opacity: 1;
+        transform: rotateX(0deg); /* Visible */
+    }
+    31% {
+        opacity: 1;
+        transform: rotateX(0deg); /* Hold */
+    }
+    35% {
+        opacity: 0;
+        transform: rotateX(-90deg); /* Flip out */
+    }
+    96% {
+      opacity: 0;
+      transform: rotateX(-90deg); /* Hold */
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg); /* Flip in */
+    }
+}
+@keyframes flip-animation-2 {
+  0% {
+      opacity: 0;
+      transform: rotateX(90deg); /* Hidden */
+  }
+  33% {
+    opacity: 0;
+    transform: rotateX(90deg); /* Hold */
+  }
+  37% {
+      opacity: 1;
+      transform: rotateX(0deg); /* Flip in */
+  }
+  64% {
+      opacity: 1;
+      transform: rotateX(0deg); /* Hold */
+  }
+  68% {
+      opacity: 0;
+      transform: rotateX(-90deg); /* Flip out */
+  }
+  100% {
+      opacity: 0;
+      transform: rotateX(90deg); /* Hidden */
+  }
+}
+
+  @keyframes flip-animation-3 {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg); /* Hidden */
+    }
+    66% {
+        opacity: 0;
+        transform: rotateX(-90deg); /* Hold */
+    }
+    70% {
+        opacity: 1;
+        transform: rotateX(0deg); /* Flip in */
+    }
+    94% {
+        opacity: 1;
+        transform: rotateX(0deg); /* Hold */
+    }
+    98% {
+        opacity: 0;
+        transform: rotateX(-90deg); /* Flip out */
+    }
+  }
+  
+
+
 	#nav__mobile-toggle {
 		height: 40px;
 		width: 40px;

@@ -32,7 +32,7 @@
 
 	<meta name="description" content="<?php echo !empty($page_description) ? $page_description : 'We’re Federation, an advertising agency creating provocative ideas that live within advertising, entertainment and technology.' ?>">
 	<link rel="stylesheet" href="<?=HTML_ROOT;?>/assets/css/bootstrap-grid.css">
-	<link rel="stylesheet" href="<?=HTML_ROOT;?>/assets/css/styles.css?v=4">
+	<link rel="stylesheet" href="<?=HTML_ROOT;?>/assets/css/styles.css?v=6">
 	<?php 
 		if (isset($styles)) {
 			foreach ($styles as $style) {
@@ -48,6 +48,11 @@
 			<a href="<?=HTML_ROOT;?>">
 				<img src="<?=HTML_ROOT;?>/assets/images/brand/logo-federation.svg" alt="Federation" class="logo">
 			</a>
+      <span class="city-container">
+        <span class="city">Auckland</span>
+        <span class="city">Wellington</span>
+        <span class="city">Melbourne</span>
+      </span>
 		</div>
 		<div id="nav__mobile-toggle">
 			<div class="nav__mobile-toggle__bar"></div>

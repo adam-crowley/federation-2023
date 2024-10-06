@@ -19,16 +19,16 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col col-12 col-sm-6 col-md-3">
+						<div class="col col-12 col-sm-6 col-md-5">
 							<div class="address">
 								<p class="small">
-								<strong>Federation</strong><br>
+								<strong>Federation - Auckland, Wellington, Melbourne</strong><br>
 								<a href="https://www.google.com/maps/place/Level+1%2F111+Wellesley+Street+West,+Auckland+CBD,+Auckland+1010/@-36.8489407,174.756497,17z/data=!3m1!4b1!4m6!3m5!1s0x6d0d47f1e6053cbf:0xb837e4a9991cb353!8m2!3d-36.8489407!4d174.7586857!16s%2Fg%2F11s2mr0tmg" target="_blank">Level 1, 111 Wellesley Street West<br>
 								Auckland, 1010<br>
 								New Zealand</a></p>
 							</div>
 						</div>
-						<div class="col col-12 col-md-6">
+						<div class="col col-12 col-md-4">
 							<div class="connect">
 								<p class="small"><a target="_blank" href="https://nz.linkedin.com/company/federation.">Connect with us: <img src="<?=HTML_ROOT;?>/assets/images/utility/linkedin.svg" class="svg linkedin" alt="LinkedIn" title="LinkedIn"></a></p>
 							</div>

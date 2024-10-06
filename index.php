@@ -10,7 +10,7 @@
 	}
 
 	// Data
-	$page_title = "Leading New Zealand advertising agency for ambitious clients";
+	$page_title = "Leading New Zealand advertising agency for ambitious clients across NZ and Australia";
 	$page_description = "We’re Federation, an advertising agency creating provocative ideas that live within advertising, entertainment and technology.";
 	$styles = [
 		'slick.css',
